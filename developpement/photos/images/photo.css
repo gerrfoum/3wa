@@ -1,0 +1,21 @@
+ul {
+	display:flex;
+	flex-wrap: wrap;
+}
+li{
+	margin:1em;
+	padding: 0.5em;
+} 
+
+body{
+	width: 800px;
+}
+
+li:hover{
+	background-color: silver;
+	border-radius: 2em;
+}
+
+li.selected {
+	background-color: forestgreen;
+}

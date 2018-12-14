@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	text-align: center;
+}
+
+nav{
+	background-color:green ;
+}
+.container{
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*elements section*/
+.parent{
+	background-color: white;
+	width: 70%;
+	float: left;
+}
+aside {
+	padding-left: 2%; 
+	width: 30%;
+	float: left;
+	background-color:#BED4AB;
+}
+a{
+	color :white;
+
+}
+.image{
+	width: 100%;
+}
+h1 {
+	color: green;
+}
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+
+	p {
+		color: red;
+	}
+	.parent{
+		background-color:100%;
+		width:100%;
+		float:none;
+	}
+	aside{
+		width: 100%;
+		display: block;
+	}
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+	p {
+		color: green;
+		display:block;
+	}
+
+}

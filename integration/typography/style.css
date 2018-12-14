@@ -1,0 +1,37 @@
+@font-face{
+	font-family:"cardo";
+	src:url('fonts/cardo/cardo-regular.woff');
+}
+@font-face{
+	font-family:"cardo";
+	font-style: italic;
+	src:url('fonts/cardo/cardo-italic.woff');
+}
+@font-face{
+	font-family:"cardo";
+	font-weight: bold;
+	src:url('fonts/cardo/cardo-bold.woff');
+}
+@font-face{
+	font-family:"blacksword";
+	src:url('fonts/Blacksword.otf'); 
+}
+
+.jil{background-image:url('img/bunting.png');
+background-repeat: repeat-x; 
+
+}
+
+
+body {
+	font-family:"cardo";
+}
+h1 {
+	font-family:"blacksword";
+}
+h2{
+	font-family:"blacksword";
+}
+h3{
+	font-family:"blacksworth";
+}

@@ -1,0 +1,81 @@
+/* GÉNÉRALITÉ */
+
+* {
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* HEADER */
+
+header{
+	text-align: center;
+	background-image: url('img/fond.jpg');
+	color:white;
+	font-family: arial;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.yul{
+	padding-bottom: 30%;
+
+}
+.fas, .far{
+	display: block;
+}
+.section1 article{
+	display:inline-block;
+	height: 50%;
+
+}
+
+/* SECTION 1 */                                                                                                                                                             
+
+.art1 img{
+	float: left;
+}
+.art2 img{
+	float:right;
+}
+
+/* SECTION 2 */
+
+
+.section2 article{
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	color:white;
+
+	
+}
+.section2 ,footer{
+	background-image: url('img/background_section.jpg');
+	background-size: cover;
+
+}
+.section2 img{
+	width: 75%;	
+}
+nav a{
+	display: inline-block;
+}
+h1,h2,h3,nav{
+	font-family:'kaushan script',cursive;
+}
+
+
+.clear{
+	clear: both;
+}
+iframe{
+	width:100%;
+	height: 75%;
+}
+/*elements section*/;
+
+	
+	

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+   	<title>fLEX</title>
+   	<style>
+   		ul {
+   			margin: 2em 0;
+   			padding: 0;
+   			list-style: none;
+   			border: 3px solid black;
+
+   		}
+   		li{
+   			padding: 1em;
+   		}
+   		li:nth-child(1) {
+   			background-color:red;
+   		}
+   		li:nth-child(2) {
+   			background-color: green;
+   		}
+   		li:nth-child(3) {
+   			background-color: blue;
+   		}
+   		li:nth-child(4) {
+   			background-color: yellow
+   		}
+   		li:nth-child(5) {
+   			background-color:red;
+
+   		}
+   		li:nth-child(6) {
+   			background-color: green;
+   		}
+
+		.test-1 {
+			display: flex;
+		}
+		.test-2{
+			display:flex;
+			flex-direction: row-reverse;
+		}
+		.test-3{
+			display :flex;
+			flex-direction: column;
+		}
+		.test-4{
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		.test-5{
+			display: flex;
+			width: 200px;
+			flex-wrap: nowrap;
+		}
+		.test-6{
+			display: flex;
+			width: 200px;
+			flex-wrap: wrap;
+
+		}
+		.test-7{
+			display: flex;;
+			align-items: center;
+		 
+
+			}
+		}
+		.test-8
+		li:nth-child(odd){
+			line-height: 4em;
+
+		}
+		.test-9
+		line-height: ;
+		}
+
+		.test-10{
+			display: flex;
+			justify-content: center;
+		}
+		.test-11{
+			display: flex;
+			justify-content: flex-start;
+		}
+		.test12{
+			display: flex;
+			justify-content: flex-end;
+		}
+		.test-13{
+			display: flex;
+			justify-content: space-between;
+		}
+		.test-14{
+			display: flex;
+			justify-content: space-around;
+		}
+		.test-15 li:nth-child(1){
+			order: 4;
+		}
+		.test-15 li:nth-child(2){
+			order: 5;
+		}
+		}
+
+
+
+
+   	</style>
+</head>
+<body>
+
+	<ul class="test-1">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+
+	<ul class="test-2">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul>
+   	<ul class="test-3">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+   	<ul class="test-4">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul>
+   	<ul class="test-5">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+   	<ul class="test-6">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+   	<ul class="test-7">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+   	<ul class="test-8">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+   	<ul class="test-9">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+   	<ul class="test-10">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+   	<ul class="test-11">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+   	<ul class="test-12">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+   	<ul class="test-13">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul> 
+   	<ul class="test-14">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul>
+   	<ul class="test-15">
+   		<li>A</li>
+   		<li>B</li>
+   		<li>D</li>
+   		<li>E</li>
+   		<li>f</li>
+   		<li>G</li>
+   	</ul>   	   	  	  	  	  	  	  	  	  	  	   	  	   	
+   	  
+<body>
+
+</html>

@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	background-image:url("img/fond.png"); 
+}
+
+header{
+	text-align: center;
+	background-color: #02B2B2;
+	background-repeat: repeat-x;
+	
+	
+	
+	
+}
+
+.article1{
+	text-align: center;
+	p
+}
+
+/* Centrage des éléments */
+.container {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*elements section*/
+.parent{
+	background-color: white;
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 10px;
+	width: 70%;
+	float: left;
+
+}
+aside {
+	padding-left: 2%; 
+	width: 30%;
+	float: left;
+	background-color: aqua;
+	margin-bottom: 
+
+}
+.image1{
+	float :left; 
+}
+.image2{
+	float: left;
+}
+.enf1{
+	width: 48%;
+	float: left;
+	
+
+	}
+.enf2{
+	width: 48%;
+	float:left;
+	padding-left: 2%;
+	
+}

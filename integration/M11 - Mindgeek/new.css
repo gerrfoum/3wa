@@ -1,0 +1,57 @@
+
+
+.prime{text-align: center;
+	background-image: url('img/background.jpg');
+	color:white;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-bottom: 20%;
+
+}
+input{
+	background-color: pink;
+	background-repeat: repeat-x;
+	width: 100%;
+	color:white;
+	padding-bottom:2%;
+	padding-left: 5%;
+	font-size: +2; 
+}
+h2{
+	text-align: center;
+	width:100%;
+}
+.ordre{
+	display: flex;
+	justify-content: space-around;
+	width:100%;
+		
+}
+.art{
+	display: flex;
+	flex-wrap:wrap;
+	
+	
+}
+article{
+	width: 33%;
+}
+ footer nav{
+ 	color: white;
+ 	background-color:#23414F;
+	padding-bottom: 3%;
+	display: flex;
+	justify-content: space-around;
+	width:100%;
+		
+}
+h3{
+	text-align: center;
+	color: pink;
+
+}
+a{
+	color: white;
+}
+
+

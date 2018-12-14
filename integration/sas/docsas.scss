@@ -1,0 +1,20 @@
+$color1:red;
+$fonty:arial;
+
+h1{
+	color:$color1;
+	font:$fonty; 																												 																	
+}	
+
+@for $i	from 2 through 12 {
+
+	.grid-#{$i}{
+		display: flex;
+	}
+	.grid-#{$i}>*{
+		width: 100%/$i;																
+	}
+
+}	
+
+																											
