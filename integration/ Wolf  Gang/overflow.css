@@ -1,0 +1,25 @@
+div{
+
+
+
+	width: 400px;
+	height: 400px;
+	background-color:blue;
+	overflow: auto scroll;
+
+}
+h1{
+    width: 400px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.trans{
+	transition: background-color 1s;
+	transition: transform 0.5s;
+}
+.trans:hover{
+	background-color: red;
+	transform: rotate(60deg);
+}

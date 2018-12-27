@@ -1,0 +1,95 @@
+.tel{
+	width: 10%;
+
+}
+.yul{
+
+	float: right;
+	width: 100%;
+}
+
+.el{
+	float: left;
+	padding-bottom: 10px;
+
+}
+.container {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.numgen{
+	
+	padding-top: 25px;S
+	padding-left: 20px;
+	padding-right: 10px;
+	height: : 80%;
+	
+
+}
+
+de {
+	padding-left: 2%; 
+	height: 20%;
+	
+	 
+
+}
+
+
+
+.back{
+	background-image:url("img/bg_header.png");
+	padding-bottom: 55em;
+	text-align: center;
+	color: white; 
+}
+
+header{
+	text-align: center;
+	background-image:url("img/fond.png") ;
+	background-repeat: repeat-x;
+	display: flex;
+}
+.back h3{
+
+}
+
+
+}
+body{
+	background-image:url("img/fond.png"); 
+}
+
+.division{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+h2{
+	text-align: center;
+	width: 100%;
+}
+.numgen img{
+	width: 25%;
+	height: 80%;
+}
+
+
+.hem a{
+	display: inline-block;
+}
+.art{
+	clear: both;
+	}
+
+
+	.new{
+		display: flex;
+	   flex-wrap: wrap;
+	   justify-content: space-around;
+
+	}
+	

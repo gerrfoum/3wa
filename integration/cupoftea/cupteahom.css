@@ -1,0 +1,177 @@
+.classement{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 100%;
+	text-align: center;
+	background-color: white;
+	margin-bottom: 2em;
+
+}
+
+.classement img{
+	width: 150px;
+	height: 140px;
+
+}
+.classement h2{
+	text-align: center;
+	color: limegreen;
+	width: 100%;
+
+}
+
+
+.produit{
+	display: flex;
+	background-color: white;
+	margin-bottom: 4em;
+}
+
+
+ 	
+ }
+ .arti a{
+ 	background-color: maroon;
+ 	color: white
+ }
+
+ .container{
+ 	max-width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+ 	
+ }
+ .el{
+ 	text-align: center;
+ 	color: green;
+ }
+
+
+ 	
+ 	
+
+ }
+ .classement article{
+ 	padding-left: 0%
+ }
+ 	
+ footer{
+ 	
+ 	color: white;
+ 	background-image: url('img/bg.jpg');
+ }
+
+ .emploi{
+ 	display: flex;
+ 	justify-content: space-between;
+
+ 	 }
+
+  .lien  {
+ 	display: flex;
+ 	justify-content: space-around;
+ 	color: white;
+ 	text-decoration: none;
+ }
+ /*p 
+{ 
+/*arrière plan noir mais avec une transparence de 80%*/ 
+/*notez le "." du "0.8"*/ 
+/*background-color: rgba(0,0,0,0.8); 
+width: 640px; 
+height: 200px; 
+position: relative; 
+top: 90px; 
+} 
+*/
+header{
+	color: white;
+ 	background-image: url('img/bg.jpg');
+ 	background-bottom:45em;
+ 	margin-bottom: 5em;
+
+
+}
+
+.titre h3{
+	background-color: #889c29;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	margin-right: 0%;
+	margin-left: 0%;
+
+}
+
+.premier{
+	display: flex;
+	justify-content: space-around;
+}
+.promo{
+	width: 100%;
+	background-color: white;
+}
+
+body{
+	background-color: #f1f1f1;
+	font-family: 'Open Sans', sans-serif;
+	margin top: 0%; 
+ }
+ .container h1{
+ 	text-align:center;
+ 	color:limegreen;
+ }
+
+ h1,h2,h3{
+ 	font-family: 'Amaranth', sans-serif;
+ }
+
+ .arti img{
+ 	width: 100%;
+ 	
+ }
+ .arti{
+ 	text-align: center;
+
+ }
+ .lien a{
+ 	color: white;
+ 	text-decoration: none;
+ }
+ .titre img{
+ 	width: 5%;
+ 	position: absolute;
+ 	width: 115px;
+ 	right: 0;
+ 	top:1em;
+
+ }
+ .premier a{
+ 	color: white;
+ 	text-decoration: none;
+ }
+.fas{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+ 	
+
+
+
+ 
+	
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>formulaire</title>
+     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="css/todolist.css">
+</head>
+<body>
+
+    
+    
+     <script src=""></script>
+ <div>
+ 	 <?php if(empty($tasks) == false): ?>
+                <!-- Formulaire listant toutes les tâches existantes avec possibilité de suppression. -->
+                <form class="standard-form" action="remove.php" method="POST">
+                    <ul class="task-list">
+                    
+                    
+                        <?php foreach($tasks as $index => $taskData): ?>
+                            <li>
+                                <input id="task-<?= $index ?>" type="checkbox" name="indexes[]" value="<?= $index ?>">
+                                <label for="task-<?= $index ?>" class="<?= $taskData[3] ?> ">
+                                    <?= $taskData[0] ?>
+                                    <?php if(date_create($taskData[2]) < $now): ?>
+                                        <strong>- en retard</strong>
+                                    <?php endif ?>
+                                </label>
+                                <p><?= $taskData[1] ?></p>
+                            </li>
+                        <?php endforeach ?>
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                            <input type="submit" value="Supprimer" title="Supprimer les tâches sélectionnées">
+                        </li>
+                    </ul>
+                </form>
+                <hr>
+    <?php endif ?>
+ </div>
+
+<form method="post" action="exnouv.php">
+		<h2>GESTIONNAIRE DES TACHES :-</h2>
+		<input type="button" name="supp"  value="SUPPRIMER">
+		<hr></hr>
+
+		<fieldset>
+			<legend>Information sur la tache</legend>
+				<fieldset>
+
+					<label for="titre">Titre:</label>
+					<input type="text" name="titre" id="titre">
+				</fieldset>
+				<fieldset>	
+
+					<label for="taches">Taches:</label>
+					<input type="textarea" name="taches" id="taches"  width="60px">
+				</fieldset>	
+
+
+				<fieldset>
+		      		<select name="jour">
+    					
+    					<option value="01">01</option>
+    					<option value="03">03</option>
+    					<option value="05">05</option>
+    					<option value="07">07</option>
+    					<option value="10">10</option>
+    					<option value="14">14</option>
+    					<option value="17">17</option>
+    					<option value="20">20</option>
+    					<option value="23">23</option>
+    					<option value="26">26</option>
+    					<option value="28">28</option>
+    					<option value="31">31</option>
+					</select>
+					<select name="mois">
+						<option value="01">Janvier</option>
+                		<option value="02">Fevrier</option>
+                		<option value="03">Mars </option>
+                		<option value="04">Avril</option>
+                		<option value="05">Mai</option>
+                		<option value="06">Juin</option>
+                		<option value="07">Juillet</option>
+                		<option value="08">Aout</option>
+                		<option value="09">Septembre</option>
+                		<option value="10">Octobre</option>
+                		<option value="11">Novembre</option>
+                		<option value="12">Decembre</option>
+                	</select>
+
+			
+					<select name="annee">
+   				 		<option value="2018">2018</option> 
+       					<option value="2019">2019</option>
+       					<option value="2018">2020</option> 
+       					<option value="2019">2021</option>
+
+					</select>
+				</fieldset>	
+				
+    					
+				<fieldset>
+				<label>Priorite:</label>
+		    
+
+		    		<label for="">Basse</label>
+		    		<input type="radio" name="priorite" value="basse"/>
+		   			 <label for="">Normale</label>
+	        		<input type="radio" name="priorite" value="normale"/>
+	        		<label for="">Haute</label>
+	       			<input type="radio" name="priorite" 
+	       				 value="haute"/>
+	       		</fieldset>	
+
+
+			<input type="submit" name="ajout"  value="AJOUTER"/>
+
+
+	  
+		  
+		 	
+		 </fieldset>
+
+	</form>	 
+
+</body>
+
+			
+
+		
+
+</html>

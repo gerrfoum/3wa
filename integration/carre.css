@@ -1,0 +1,43 @@
+div{
+
+
+	width: 300px;
+	text-align: center;
+	line-height: 300px;
+
+	margin:10em auto;
+	background-color:blue;
+	/*transform: rotate(45deg) translateX(10em) translateY(5em) scale(0.5) skewX(15deg);*/
+
+	/*transition: background-color 2s;*/
+
+}
+
+/*
+
+.trans{
+	transition: background-color 1s;
+	transition: transform 0.5s;
+}
+.trans:hover{
+	background-color: red;
+	transform: rotate(60deg);
+}
+*/
+@keyframes slide{
+0%{
+	transform:translateX(-20em);
+
+}
+80%{
+	transform: translateX(2em);
+}
+100%{
+	transform: translateX(0);
+
+ }
+}
+.trans{
+	animation: slide 2s;
+}
+	
