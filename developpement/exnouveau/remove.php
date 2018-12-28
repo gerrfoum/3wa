@@ -1,11 +1,75 @@
-,yul,2018-01-01,
-,yul,2018-01-01,
-a,a,2018-01-01,
-a,a,2018-01-01,
-a,a,2018-04-01,
-v,v,2018-03-01,
-,,2018-01-01,tell,vvvvvvvvvvvvvvv,2018-12-01,haute
-aaaaa,yul,2018-01-01,normale
-numero,quand,2018-03-01,haute
-recreation,nettoyage,2018-10-20,normale
-tell,v,2018-09-23,normale
+<?php
+function recup(){
+	
+	$file = fopen('tasks.csv', 'a+');
+		
+	$tasks = array(); // []
+    
+    while(true)
+	{
+
+		$taskData = fgetcsv($file);
+        
+		if($taskData == false)
+		{
+			break;
+		}
+		array_push($tasks, $taskData);
+	}
+    
+    fclose($file);
+
+	return $tasks;
+
+
+}
+
+
+function removeTasks(array $allTasks, array $indexes)
+{
+	$tasks = [];
+    
+    foreach($allTasks as $index => $value)
+    {
+    	if(in_array($index, $indexes) == false)
+        {
+        	array_push($tasks, $value);
+        }
+    
+    }
+    
+    return $tasks;
+
+}
+
+function saveTasks(array $tasks)
+{
+	$file = fopen('tasks.csv', 'w');
+    
+    foreach($tasks as $taskData)
+	{
+    	fputcsv($file, $taskData);
+    }
+    
+    fclose($file);
+
+}
+
+if(empty($_POST) == false) {
+
+	var_dump($_POST["indexes"]);
+	$allTasks = recup();
+    
+    $tasks = removeTasks($allTasks, $_POST['indexes']);
+
+	saveTasks($tasks);
+
+
+
+}
+header('Location: exnouv.php');
+
+
+?>
+
+

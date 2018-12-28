@@ -1,5 +1,3 @@
-
-
 <?php
 
 
@@ -47,6 +45,30 @@ function addTask($title, $description, $date, $priority) {
 
 }
 
+function loadTasks()
+{
+	$file = fopen('tasks.csv', 'a+');
+		
+	$tasks = array(); // []
+    
+    while(true)
+	{
+
+		$taskData = fgetcsv($file);
+        
+		if($taskData == false)
+		{
+			break;
+		}
+		array_push($tasks, $taskData);
+	}
+    
+    fclose($file);
+
+	return $tasks;
+
+}
+
 function recup(){
 	
 	$file = fopen('tasks.csv', 'a+');
@@ -73,7 +95,7 @@ function recup(){
 }
 
 
-	$now = date_create();
+$now = date_create();
 
 $tasks = recup();
 
