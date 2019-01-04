@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title> commande</title>
+	<link rel="stylesheet" href="affichage.css">
+</head>
+
+
+
+<body>
+	<h1>Bons de commande</h1>
+
+     <table >
+     	<tr>
+     	   <td><h3>Numéro commande</h3></td>
+     	   <td><h3>Date de commande</h3></td>
+     	   <td><h3>Date de livraison</h3></td>
+     	   <td><h3>Statut</h3></td>
+     	</tr>
+     		
+     	<?php foreach($command as $order): ?>
+			<tr>
+				<td><a href="commande2.php?orderNumber=<?=$order['orderNumber']?>"><?=$order['orderNumber']?></a></td>
+				<td><?=$order['orderDate']?></td>
+				<td><?=$order['shippedDate']?></td>
+				<td><?=$order['status']?></td>
+			</tr>
+		<?php endforeach ?>
+     </table>
+     <footer >
+     	
+
+     </footer>		   
+    	
+
+</body>
+</html>
+
