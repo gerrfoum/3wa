@@ -1,0 +1,6 @@
+<h1>Bienvenue sur ma session</h1>
+<?php if (array_key_exists( 'firstname', $_SESSION )):?>
+	
+    <p>bravo <?= $_SESSION['firstname'] ?> vous êtes connecté !</p>
+
+<?php endif ?>

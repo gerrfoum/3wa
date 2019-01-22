@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>local storage</title>
+   
+    <link rel="stylesheet" href="style.css">
+
+    
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+   
+</head>
+<body>
+    <section>
+        <h1><i class="fa fa-book"></i> Carnet d'Adresses</h1>
+
+        <!-- Contenu du carnet d'adresses (liste de contacts) -->
+        <section id="address-book"></section>
+
+        <!-- Détails d'un contact particulier du carnet d'adresses -->
+        <aside id="contact-details" class="hide">
+            <h3 id="yul"></h3>
+            <p class="edit"></p>
+            <a href="#">Editer ce contact</a>
+        </aside>
+
+        <nav>
+            <table class="menu">
+                <tr>
+                <td>
+                <button id="ajout" title="Ajouter un contact"><i class="fa fa-plus">+</i></button></td>
+                </tr>
+                <tr>
+                <td><button id="efface" title="Effacer le carnet d'adresses">-</td></button></tr>
+            </table>
+        </nav>
+    </section>
+
+    <!-- Le formulaire de saisie de contact ne s'affiche pas au démarrage -->
+    <form id="forms" class="hide" data-mode="ajout">
+        <hr>
+        <table>
+            <tr>
+                <td>Civilité:</td>
+                <td> 
+                <select id="title" name="title">
+                    <option value="Madame">Madame</option>
+                    <option value="Mademoiselle">Mademoiselle</option>
+                    <option value="Monsieur">Monsieur</option>
+                </select>
+            </td>
+            <tr>
+                <td>Nom :</td>
+                <td>
+                <input id="nom" type="text" name="nom">
+                </td>
+            </tr>
+            <tr>
+                <td>Prénom :</td>
+                <td>
+                <input id="prenom" type="text" name="prenom">
+                </td>
+            </tr>
+            <tr>
+                <td>Téléphone :</td>
+                <td>
+                <input id="phone" type="text" name="phone" maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <input type="button" id="save-contact" value="Enregistrer">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+     <script src="utilities.js"></script>
+    <script src="formstorage.js"></script>
+    </body>
+    </html>
