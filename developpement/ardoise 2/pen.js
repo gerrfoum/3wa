@@ -1,12 +1,13 @@
-var Pen=function(){
-	this.couleur='red';
-	this.taille=1;
+var Pen = function()
+{
+    this.color = 'black';
+    this.size  = 1;
+};
 
-}
-Pen.prototype.init=function(context){
-	context.strokeStyle='red';
-	context.lineWidth=1;
 
-	
+Pen.prototype.configure = function(slateCanvasContext)
+{
+    slateCanvasContext.strokeStyle = this.color;
+    slateCanvasContext.lineWidth   = this.size;
+};
 
-}

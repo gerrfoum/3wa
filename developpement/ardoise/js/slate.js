@@ -66,5 +66,11 @@ var Slate = function(canvas)
 
  Slate.prototype.onMouseUpAndLeave = function(event) {
   
-  	this.isDrawing = false;
+    this.isDrawing = false;
+  }
+  
+  Slate.prototype.clear = function(event) {
+  
+    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+  
   }

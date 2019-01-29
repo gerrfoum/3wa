@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 if(empty($_POST))==false {
 	
@@ -17,7 +17,7 @@ if(empty($_POST))==false {
  
 
 }
-
+                                                                          
 
 
 include 'header.phtml';
