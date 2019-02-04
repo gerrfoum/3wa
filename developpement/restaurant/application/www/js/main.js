@@ -3,7 +3,16 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 // FONCTIONS                                                                           //
 /////////////////////////////////////////////////////////////////////////////////////////
+if (document.location.href.indexOf('order') != -1 && document.location.href.indexOf('order/validate') == -1) {
+	var order = new OrderForm();
+	console.log(order);
+} 
 
+
+if ( document.location.href.indexOf('order/validate') != -1) {
+	var validate = new Validate();
+	console.log(validate);
+} 
 
 
 

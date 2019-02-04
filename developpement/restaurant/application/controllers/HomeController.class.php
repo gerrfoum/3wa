@@ -10,7 +10,7 @@ class HomeController
         $mealModel = new MealModel();
         $meals = $mealModel-> listAll();
 
-        var_dump($meals);
+       /* var_dump($meals);*/
 
         return [
             'meals'=> $meals

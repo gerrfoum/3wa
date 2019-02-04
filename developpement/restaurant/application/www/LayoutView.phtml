@@ -28,12 +28,24 @@
 <!-- Interface utilisateur -->
 <nav class="user-interface">
     <ul class="link-list">
+    <?php if (array_key_exists( 'firstName', $_SESSION ) == false) {?>
          <li>
-            <a class="button button-primary" href="">Créer un compte</a>
+            <a class="button button-primary" href="<?=$requestUrl?>/user/register">Créer un compte</a>
         </li>
         <li class="layout-right">
-            <a class="button button-primary" href="">Connexion</a>
+            <a class="button button-primary" href="<?=$requestUrl?>/user/login">Connexion</a>
         </li>
+        <?php } else {?><ul class="link-list">
+                            <li>
+                    <a class="button button-primary" href="<?=$requestUrl?>/booking">Réserver</a>
+                    <a class="button button-primary" href="<?=$requestUrl?>/order/">Commander</a>
+                </li>
+                <li class="layout-right">
+                    <p class="welcome">Bonjour <strong></strong> !</p>
+                    <a class="button button-primary" href="<?=$requestUrl?>/user/logout">Déconnexion</a>
+                </li>
+                <?php } ?>
+                    </ul>
     
         <!-- Code HTML/PHP à écrire -->
     </ul>
