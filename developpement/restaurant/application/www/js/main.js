@@ -10,7 +10,7 @@ if (document.location.href.indexOf('order') != -1 && document.location.href.inde
 
 
 if ( document.location.href.indexOf('order/validate') != -1) {
-	var validate = new Validate();
+	var validate = new RecapValidate();
 	console.log(validate);
 } 
 

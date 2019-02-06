@@ -11,6 +11,7 @@ class HomeController
         $meals = $mealModel-> listAll();
 
        /* var_dump($meals);*/
+       var_dump($_SESSION);
 
         return [
             'meals'=> $meals
@@ -31,5 +32,8 @@ class HomeController
     	 * L'argument $http est un objet permettant de faire des redirections etc.
     	 * L'argument $formFields contient l'équivalent de $_POST en PHP natif.
     	 */
+
+
+
     }
 }

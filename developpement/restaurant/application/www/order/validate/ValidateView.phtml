@@ -1,9 +1,9 @@
   <h2><i class="fa fa-check"></i> Payer la commande</h2>
 
 <section class="invoice">
-    <p><strong><?= $_SESSION['user']['firstName'] ?> <?= $_SESSION['user']['lastName']?>S</strong></p>
-    <p><?= $_SESSION['user']['address'] ?></p>
-    <p><?= $_SESSION['user']['zipCode'] ?><span class="city"></span></p>
+    <p><strong><?= $_SESSION['firstName'] ?> <?= $_SESSION['lastName']?>S</strong></p>
+    <p><?= $_SESSION['adress'] ?></p>
+    <p><?= $_SESSION['zipCode'] ?><span class="city"></span></p>
 </section>
 
 <table class="generic-table meal-list">
@@ -30,11 +30,11 @@
             <td id="totalttc" class="colorful"></td>
         </tr>
     </tfoot>
-    <tbody>
+    <tbody >
 
     </tbody>
 </table>
-<p style="text-align: center;"></p>
+<p style="text-align: center;">Commande validé le <?=date ("d")?>/<?= date ("m")?>/<?= date("y")?></p>
 <hr>
 <h3>Merci de bien vouloir procéder au paiement de la commande.</h3>
 <form class="generic-form" action="<?= $requestUrl ?>/order/payment"  method="POST">

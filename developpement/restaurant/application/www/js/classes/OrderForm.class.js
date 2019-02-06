@@ -1,19 +1,19 @@
+'use strict';
+
+
 var OrderForm = function()
 {
-
-	
-
     this.basket = new BasketSession();
     this.onChangeMeal();
-	$('#meal').on('change', this.onChangeMeal.bind(this));
+    $('#meal').on('change', this.onChangeMeal.bind(this));
     $('#order-form button').on('click', this.validateMeal.bind(this));
     $(document).on('click', '.trash', this.removeMeal.bind(this));
-    
+}
 
 OrderForm.prototype.onChangeMeal = function(event)
 {
 
-	var mealId = $('#meal').val();
+    var mealId = $('#meal').val();
     console.log(getRequestUrl() + '/meal?id=' + mealId);
     
     $.getJSON( getRequestUrl() + '/meal?id=' + mealId, this.onAjaxChangeMeal);  
@@ -21,7 +21,7 @@ OrderForm.prototype.onChangeMeal = function(event)
 
 OrderForm.prototype.onAjaxChangeMeal = function(response)
 {
-	console.log(response);
+    console.log(response);
     
     var imageUrl = getWwwUrl() + '/images/meals/' + response.Photo;
 
@@ -51,9 +51,6 @@ OrderForm.prototype.removeMeal = function(event) {
     this.basket.remove(index);
 
 }
-
-}
-
 
 
 

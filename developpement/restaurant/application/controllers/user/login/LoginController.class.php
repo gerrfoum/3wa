@@ -14,6 +14,8 @@ class LoginController
     	$userModel = new UserModel();
     	
     	$userModel->connect($_POST);
+
+         $http->redirectTo('/');
     	 
 
     }
