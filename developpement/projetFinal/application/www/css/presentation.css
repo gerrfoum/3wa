@@ -1,0 +1,16 @@
+.fond {
+	background-image: url('../images/home/prairie-en-fleurs.jpg');
+	background-size: 100%;
+
+	min-height: 100vh;
+}
+
+h1{
+	text-align: center;
+}
+
+
+p {
+	color:green;
+
+}

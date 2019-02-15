@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Naturellement</title>
+    <link rel="stylesheet" href="<?= $wwwUrl ?>css/normalize-3.0.3.min.css">
+    <link rel="stylesheet" href="<?= $wwwUrl ?>css/font-awesome-4.3.0.min.css">
+
+    
+    
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+    
+    <script src="<?= $wwwUrl ?>/js/utilities.js"></script>
+</head>
+<body>
+
+<!-- En-tête commune -->
+<header>
+
+<!-- Interface utilisateur -->
+<nav class="user-interface">
+    <ul class="">
+    <?php if (array_key_exists( 'firstName', $_SESSION ) == false) ?>
+         <li>
+            <a class="button member" href="<?=$requestUrl?>/user/register">Devenir membre</a>
+        </li>
+        <li class="layout-right">
+            <a class="button connect" href="<?=$requestUrl?>/user/login">Connexion</a>
+        </li>
+    <?php endif ?>
+
+        <li>
+            <a class="action" href="<?=$requestUrl?>/consult/">calendrier actions</a>
+            <a class="evenement" href="<?=$requestUrl?>/consult/">calendrier evenements </a>
+
+    <?php if (array_key_exists( 'firstName', $_SESSION ) == true) ?>                
+        </li>
+        <li class="layout-right">
+            <p class="welcome">Bonjour <strong></strong> !</p>
+            <a class="button button-primary" href="<?=$requestUrl?>/user/logout">Déconnexion</a>
+        </li>
+    <?php endif ?>
+    
+    </ul>
+    
+        <!-- Code HTML/PHP à écrire -->
+    </ul>
+</nav>
+
+<main>
+    <!-- Affichage du template lié à la vue -->
+    <?php include $this->viewData['template']; ?>
+</main>
+
+<!-- Pied de page commun -->
+<footer>
+    
+</footer>
+
+<!-- Code principal JavaScript de l'application -->
+<script src="<?= $wwwUrl ?>/js/main.js"></script>
+
+</body>
+</html>

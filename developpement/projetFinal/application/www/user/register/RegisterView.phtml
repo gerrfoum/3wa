@@ -1,0 +1,53 @@
+<h2><i class="creat"> Creation d'un compte membre</i> </h2>
+
+<form class="generic-form" action="<?= $requestUrl ?>/user/Register" method="POST">
+
+
+    <fieldset>
+        <legend><i class="fa fa-book"></i> Vos coordonnées</legend>
+        <ul>
+            <li>
+                <label for="lastname">Nom :</label>
+                <input id="lastname" type="text" name="lastname" data-required data-name="Nom" value="">
+            
+            </li>
+            <li>
+                <label for="firstname">Prénom :</label>
+                <input id="firstname" type="text" name="firstname" data-required data-name="Prénom" value="">
+            </li>
+           
+               
+            <li>
+                <label class="textarea" for="address">Adresse :</label>
+                <textarea id="address" name="address" rows="3"></textarea>
+            </li>
+            <li>
+                <label for="zipCode">Code Postal :</label>
+                <input id="zipCode" class="zip-code" type="text" maxlength="5" name="zipcode" data-name="Code postal" data-type="number" value="">
+            </li>
+            <li>
+                <label for="city">Ville :</label>
+                <input id="city" type="text" name="city" value="">
+            </li>
+            <li>
+                <label for="email">E-mail :</label>
+                <input id="email" type="text" name="email" data-required data-name="E-mail" value="">
+            </li>
+            <li>
+                <label for="password">Mot de passe :</label>
+                <input id="password" type="password" name="password" data-required data-name="Mot de passe" data-length="8">
+            </li>
+            
+            <li>
+                <label for="phone">Téléphone :</label>
+                <input id="phone" class="phone" type="text" maxlength="10" name="phone" data-name="Téléphone" data-type="number" value="">
+            </li>
+        </ul>
+    
+        <li>
+            <input class="button button-primary" type="submit" value="Créer le compte">
+            <a class="button button-cancel small" href="<?= $requestUrl ?>">Annuler</a>
+        </li>
+    </ul>
+    </fieldset>
+</form>
