@@ -10,7 +10,7 @@ class ConsultModel {
         return $database->query($sql);
     }
 
-		public function showPartners() {
+		public function showPartner() {
         $database = new Database();
 
         $sql = 'SELECT * FROM Partner';

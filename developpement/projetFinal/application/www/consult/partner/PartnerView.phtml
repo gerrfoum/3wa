@@ -1,0 +1,25 @@
+<div class="partenaires">
+	<h1>NOS PARTENAIRES<h1>
+	<table class="commun">
+		
+		<?php foreach($display as $view): ?>
+			
+		<tr><p><?= $view['Name']; ?></p></tr>
+		
+		<tr><?=$view['Activity']?></tr><br><br>
+		
+					
+		<tr>Lieu:<?= $view['Address'];?></tr><br><br>
+
+		<tr>Le:<?= $events['Phone'];?></tr>
+		
+		<?php endforeach; ?>
+	
+
+	</table>
+
+
+
+
+
+</div>

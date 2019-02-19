@@ -10,7 +10,7 @@ class EventController
         $event = new ConsultModel();
         $show= $event-> showEvent ();                 
 
-       /* var_dump($meals);*/
+       /* var_dump($how);*/
        var_dump($_SESSION);
 
         return [

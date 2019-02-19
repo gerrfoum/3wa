@@ -1,0 +1,25 @@
+<div class="affichage">
+	<h1>EVENEMENTS ACTUELS<h1>
+	<table class="evenement">
+		
+		<?php foreach($show as $events): ?>
+			
+		<tr><p><?= $events['Name']; ?></p></tr>
+		
+		<tr><?=$events['Description']?></tr><br><br>
+		
+					
+		<tr>Lieu:<?= $events['Location'];?></tr><br><br>
+
+		<tr>Le:<?= $events['EventTime'];?></tr>
+		
+		<?php endforeach; ?>
+	
+
+	</table>
+
+
+
+
+
+</div>

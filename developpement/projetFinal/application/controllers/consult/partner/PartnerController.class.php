@@ -8,7 +8,7 @@ class PartnerController
        // var_dump('coucou');
 
         $partner = new ConsultModel();
-        $display= $partner-> showPartner ();                 
+        $display = $partner->showPartner();                 
 
        /* var_dump($meals);*/
        var_dump($_SESSION);
